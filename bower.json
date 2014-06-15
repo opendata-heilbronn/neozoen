@@ -1,0 +1,25 @@
+{
+    "name": "angular-bootstrap-app",
+    "version": "0.1",
+    "authors": [
+        "Felix Ebert <felix.ebert@if-core.de>"
+    ],
+    "main": "index.html",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "bootstrap": "~3.1.1",
+        "angular": "~1.2.16",
+        "angular-bootstrap": "~0.10.0",
+        "angular-route": "~1.2.16"
+    },
+    "devDependencies": {
+        "angular-mocks": "~1.2.16"
+    }
+}

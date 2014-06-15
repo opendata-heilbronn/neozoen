@@ -128,7 +128,7 @@
             }
         }
 
-        new Hammer(element[0], { dragLockToAxis: true }).on("release dragleft dragright swipeleft swiperight", handleHammer);
+        new Hammer(element[0], { dragLockToAxis: true, dragBlockHorizontal: true }).on("release dragleft dragright swipeleft swiperight", handleHammer);
     }
 
     angular.module('app').directive('carousel', function () {

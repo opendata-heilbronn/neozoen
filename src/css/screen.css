@@ -8,9 +8,8 @@ html, body, .app-view, #carousel, #carousel ul, #carousel li {
 }
 
 .animal-img {
-    max-height: 50%;
+    height: 100%;
     max-width: 100%;
-    margin-bottom: 1em;
 }
 
 .animal-list-img {
@@ -18,6 +17,7 @@ html, body, .app-view, #carousel, #carousel ul, #carousel li {
 }
 
 #carousel .title {
+    height: 10%;
     color: #64E270;
 }
 
@@ -64,4 +64,20 @@ html, body, .app-view, #carousel, #carousel ul, #carousel li {
     overflow: hidden;
     -webkit-transform-style: preserve-3d;
     -webkit-transform: translate3d(0, 0, 0);
+}
+
+.img-container {
+    position: relative;
+    height: 40%;
+    width: 100%;
+}
+
+.scroll-container {
+    height: 50%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.desc {
+    padding-top: 1em;
 }

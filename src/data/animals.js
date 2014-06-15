@@ -2,7 +2,7 @@ app.animals = [
     {
         id: 'aedes_albopictus',
         name: 'Asiatische Tigermücke',
-        img: 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/CDC-Gathany-Aedes-albopictus-1.jpg/2560px-CDC-Gathany-Aedes-albopictus-1.jpg',
+        img: 'img/aedes_albopictus.jpg',
         desc: 'Stechmückenart, die als Überträger von Krankheiten wie Chikungunya- und Denguefieber zwischen zwei und zehn Millimeter große, auffällig schwarz-weiß gemusterte Stechmücke. Obwohl die Asiatische Tigermücke in tropischen und subtropischen Regionen beheimatet ist,  passt sie sich erfolgreich an kühlere Regionen an. Sie ist in den feuchtwarmen Tropen ganzjährig aktiv, überwintert aber in gemäßigten Klimaregionen meist im Eistadium.'
     },
     {

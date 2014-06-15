@@ -5,7 +5,7 @@
      * super simple carousel
      * animation between panes happens with css transitions
      */
-    function Carousel(element) {
+    function Carousel(element, scope) {
         var self = this;
         element = $(element);
 
@@ -45,13 +45,17 @@
         /**
          * show pane by index
          */
-        this.showPane = function (index, animate) {
+        this.showPane = function (index, animate, ignoreUrl) {
             // between the bounds
             index = Math.max(0, Math.min(index, pane_count - 1));
             current_pane = index;
 
             var offset = -((100 / pane_count) * current_pane);
             setContainerOffset(offset, animate);
+            if (!ignoreUrl) {
+                scope.active = index;
+                scope.$apply();
+            }
         };
 
 
@@ -140,9 +144,9 @@
             },
             link: function (scope, element, attrs) {
                 scope.$watch('model', function () {
-                    var carousel = new Carousel(element.find('#carousel'));
+                    var carousel = new Carousel(element.find('#carousel'), scope);
                     carousel.init();
-                    carousel.showPane(scope.active, false);
+                    carousel.showPane(scope.active, false, true);
                 });
             }
         };

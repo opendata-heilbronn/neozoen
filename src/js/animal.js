@@ -5,13 +5,16 @@
         $scope.animals = app.animals;
     });
 
-    angular.module('app').controller('AnimalCtrl', function ($scope, $routeParams) {
+    angular.module('app').controller('AnimalCtrl', function ($scope, $routeParams, $location) {
         $scope.animals = app.animals;
 
-        for (var index = 0; index < $scope.animals.length; index++) {
-            if ($scope.animals[index].id === $routeParams.animalId) {
-                $scope.activeIndex = index;
-            }
-        }
+        var activeAnimal = _.find($scope.animals, function (animal) {
+            return animal.id === $routeParams.animalId;
+        });
+        $scope.activeIndex = _.indexOf($scope.animals, activeAnimal);
+
+        $scope.$watch('activeIndex', function () {
+            $location.path('/animals/' + $scope.animals[$scope.activeIndex].id, false);
+        })
     });
 })(angular, app);

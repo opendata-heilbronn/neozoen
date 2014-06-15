@@ -17,7 +17,7 @@ var app = {};
                 templateUrl: 'partials/intro.html'
             })
             .otherwise({
-                redirectTo: '/animals/aedes_albopictus'
+                redirectTo: '/intro'
             });
     });
 

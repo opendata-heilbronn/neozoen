@@ -11,12 +11,20 @@ html, body, .app-view, #carousel, #carousel ul, #carousel li {
     height: 100%;
 }
 
+.chart {
+    max-height: 70%;
+    width: 100%;
+}
+
 .animal-list-img {
     max-width: 100%;
 }
 
 #carousel .title {
     height: 10%;
+}
+
+.title, h1, h2 {
     color: #64E270;
 }
 

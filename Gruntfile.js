@@ -73,7 +73,7 @@ module.exports = function (grunt) {
             server: {
                 options: {
                     port: 8011,
-                    hostname: 'localhost',
+                    hostname: '0.0.0.0',
                     base: 'src/',
                     middleware: function (connect, options) {
                         var modRewrite = require('connect-modrewrite');

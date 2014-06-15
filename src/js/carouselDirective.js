@@ -131,7 +131,7 @@
         new Hammer(element[0], { dragLockToAxis: true }).on("release dragleft dragright swipeleft swiperight", handleHammer);
     }
 
-    angular.module('app.animal').directive('carousel', function () {
+    angular.module('app').directive('carousel', function () {
         return {
             restrict: 'E',
             scope: {

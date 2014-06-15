@@ -135,12 +135,14 @@
         return {
             restrict: 'E',
             scope: {
-                model: '='
+                model: '=',
+                active: '='
             },
             link: function (scope, element, attrs) {
                 scope.$watch('model', function () {
                     var carousel = new Carousel(element.find('#carousel'));
                     carousel.init();
+                    carousel.showPane(scope.active, false);
                 });
             }
         };

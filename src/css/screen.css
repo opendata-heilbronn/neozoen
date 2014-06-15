@@ -130,6 +130,10 @@ h1, h2, .scroll-container h4, .green-title {
     margin: 1.5em 0 0 0;
 }
 
+svg a:hover {
+    text-decoration: none;
+}
+
 .list-title {
     height: 2em;
     background: #FFF;

@@ -37,7 +37,7 @@ html, body, .app-view, #carousel, #carousel ul, #carousel li {
     font-size: 18px;
 }
 
-h1, h2, .scroll-container h4 {
+h1, h2, .scroll-container h4, .green-title {
     color: #64E270;
 }
 

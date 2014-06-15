@@ -16,6 +16,10 @@ var app = {};
                 controller: 'IntroCtrl',
                 templateUrl: 'partials/intro.html'
             })
+            .when('/about', {
+                controller: 'AboutCtrl',
+                templateUrl: 'partials/about.html'
+            })
             .otherwise({
                 redirectTo: '/intro'
             });

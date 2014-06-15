@@ -2,10 +2,13 @@
     <div id="carousel">
         <ul class="list-unstyled">
             <li class="pane1" ng-repeat="animal in animals">
+                <div class="title">
+                    <h2>{{animal.name}}</h2>
+                </div>
                 <img ng-attr-src="{{animal.img}}" class="animal-img"/>
 
                 <div class="container">
-                    <p>{{animal.name}}</p>
+                    <p>{{animal.desc}}</p>
                 </div>
             </li>
         </ul>

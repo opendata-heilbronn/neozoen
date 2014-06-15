@@ -13,6 +13,10 @@ html, body, .app-view, #carousel, #carousel ul, #carousel li {
     margin-bottom: 1em;
 }
 
+.animal-list-img {
+    max-width: 100%;
+}
+
 #carousel .title {
     color: #64E270;
 }

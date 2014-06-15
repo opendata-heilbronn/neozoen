@@ -1,6 +1,10 @@
 (function (angular, app) {
     'use strict';
 
+    angular.module('app').controller('AnimalListCtrl', function ($scope) {
+        $scope.animals = app.animals;
+    });
+
     angular.module('app').controller('AnimalCtrl', function ($scope, $routeParams) {
         $scope.animals = app.animals;
 

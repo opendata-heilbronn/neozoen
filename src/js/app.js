@@ -8,6 +8,10 @@ var app = {};
                 controller: 'AnimalCtrl',
                 templateUrl: 'partials/animal.html'
             })
+            .when('/animals', {
+                controller: 'AnimalListCtrl',
+                templateUrl: 'partials/animalList.html'
+            })
             .when('/intro', {
                 controller: 'IntroCtrl',
                 templateUrl: 'partials/intro.html'

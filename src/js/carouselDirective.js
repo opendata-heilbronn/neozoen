@@ -88,7 +88,7 @@
 
         function handleHammer(ev) {
             // disable browser scrolling
-            ev.gesture.preventDefault();
+            //ev.gesture.preventDefault();
 
             switch (ev.type) {
                 case 'dragright':

@@ -2,15 +2,44 @@
     <div id="carousel">
         <ul class="list-unstyled">
             <li class="pane1" ng-repeat="animal in animals">
-                <div class="title">
-                    <h2>{{animal.name}}</h2>
-                </div>
                 <div class="img-container">
+                    <div class="title">
+                        <div class="pull-right">
+                            <a href="/animals">
+                                <img src="img/hamburger.svg" class="hamburger-icon"/>
+                            </a>
+                        </div>
+                        <h2>{{animal.name}}</h2>
+                    </div>
                     <img ng-attr-src="img/{{animal.iD}}.jpg" class="animal-img"/>
                 </div>
                 <div class="container scroll-container">
+                    <p class="desc" style="margin-top:1em">
+                    {{animal.Teaser}}
+                    </p>
+
+                    <h4>Gefahr</h4>
+
                     <p class="desc">
-                        {{animal.Teaser}}
+                        {{animal.Auswirkungen}}
+                    </p>
+
+                    <h4>Ursprungsland</h4>
+
+                    <p class="desc">
+                        {{animal.Ursprungsland}}
+                    </p>
+
+                    <h4>Transportweg</h4>
+
+                    <p class="desc">
+                        {{animal.einreise}}
+                    </p>
+
+                    <h4>Ausbreitung</h4>
+
+                    <p class="desc">
+                        {{animal.neueverbreitung}}
                     </p>
                 </div>
             </li>

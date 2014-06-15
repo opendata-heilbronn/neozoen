@@ -24,13 +24,37 @@ html, body, .app-view, #carousel, #carousel ul, #carousel li {
     height: 10%;
 }
 
-.title, h1, h2 {
+h1, h2, .scroll-container h4 {
     color: #64E270;
+}
+
+.hamburger-icon {
+    position: relative;
+    z-index: 100;
+    height: 18px;
+    margin: 14px 14px 0 0;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #FFF;
+}
+
+.title h2 {
+    position: relative;
+    z-index: 50;
+    width: 100%;
+    color: #FFF;
+    text-overflow: ellipsis;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0) 100%);
 }
 
 #carousel h2 {
     font-size: 18px;
     padding: 14px;
+    padding-right: 28px;
     margin: 0;
 }
 
@@ -80,11 +104,15 @@ html, body, .app-view, #carousel, #carousel ul, #carousel li {
 }
 
 .scroll-container {
-    height: 50%;
+    height: 60%;
     width: 100%;
     overflow-y: auto;
 }
 
 .desc {
-    padding-top: 1em;
+    padding-top: 0.3em;
+}
+
+.scroll-container h4 {
+    margin: 1.5em 0 0 0;
 }

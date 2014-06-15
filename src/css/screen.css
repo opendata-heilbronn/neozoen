@@ -16,12 +16,25 @@ html, body, .app-view, #carousel, #carousel ul, #carousel li {
     width: 100%;
 }
 
+.animal-list-item {
+    position: relative;
+    border-bottom: 3px solid #64E270;
+}
+
 .animal-list-img {
     max-width: 100%;
 }
 
-#carousel .title {
-    height: 10%;
+.animal-list-name {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40%;
+    height: 100%;
+    padding: 18px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0) 100%);
+    color: #FFF;
+    font-size: 18px;
 }
 
 h1, h2, .scroll-container h4 {
@@ -31,8 +44,8 @@ h1, h2, .scroll-container h4 {
 .hamburger-icon {
     position: relative;
     z-index: 100;
-    height: 18px;
-    margin: 14px 14px 0 0;
+    height: 30px;
+    margin: 9px 14px 0 0;
 }
 
 .title {
@@ -52,7 +65,7 @@ h1, h2, .scroll-container h4 {
 }
 
 #carousel h2 {
-    font-size: 18px;
+    font-size: 22px;
     padding: 14px;
     padding-right: 28px;
     margin: 0;

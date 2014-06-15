@@ -27,6 +27,6 @@
             if ($scope.activeIndex && $scope.animals[$scope.activeIndex]) {
                 $location.path('/animals/' + $scope.animals[$scope.activeIndex].iD, false);
             }
-        })
+        });
     });
 })(angular, app);

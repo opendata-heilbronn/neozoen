@@ -1,7 +1,10 @@
 <ul class="list-unstyled">
     <li ng-repeat="animal in animals">
-        <a href="/animals/{{animal.iD}}">
-            <img ng-attr-src="img/{{animal.iD}}.jpg" class="animal-list-img"/>
-        </a>
+        <div class="animal-list-item">
+            <a href="/animals/{{animal.iD}}">
+                <img ng-attr-src="img/{{animal.iD}}.jpg" class="animal-list-img"/>
+                <span class="animal-list-name">{{animal.name}}</span>
+            </a>
+        </div>
     </li>
 </ul>
